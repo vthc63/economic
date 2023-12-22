@@ -1,0 +1,6 @@
+.note-icon-bold:before {
+    content: "";
+}
+.note-editable {
+    min-height: 200px;
+}

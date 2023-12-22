@@ -1,0 +1,2 @@
+$(document).ready(function(){$(document).on("click","#filter-price",function(){let e=$("#filter-price").attr("url")+"",i=$("#min-price").val(),r=$("#max-price").val();if(e.search(`[\\[\\]?*+|{}\\\\()@.
+\r]`)>=0){if(e.search("min_price=")>=0){let c=e.split("min_price")[1].split("=")[1].split("&")[0];e=e.replace(c,i)}else e+=`&min_price=${i}`;if(e.search("max_price=")>=0){let c=e.split("max_price")[1].split("=")[1].split("&")[0];e=e.replace(c,r)}else e+=`&max_price=${r}`}else e+=`?min_price=${i}&max_price=${r}`;window.location.href=e})});
